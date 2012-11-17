@@ -5,7 +5,8 @@
 #
 
 RM	= rm
-CFLAGS	= -g -DUNIX -Wall
+CC = gcc
+CFLAGS	= -g -DUNIX -Wall -O3
 CSRCS	= lstree.c	\
 	    node.c	\
 	    print.c     \
@@ -24,7 +25,7 @@ HSRCS	= lstree.h	\
 ARCHIVE_FILES	= Makefile ${CSRCS} ${HSRCS} README_JP.euc
 
 lstree : ${COBJS}
-	cc ${LDFLAGS} ${COBJS} -o $@ 
+	${CC} ${LDFLAGS} ${COBJS} -o $@
 
 README_JP.sjis : FORCE
 	nkf -s README_JP.euc | sed 's/\(.*\)/\1/' > README_JP.sjis
