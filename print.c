@@ -287,7 +287,7 @@ print_tree(node)
 #ifdef __FreeBSD__
       printf(" %10qd", NODE_SIZE(node)) ;
 #else
-      printf(" %10lld", NODE_SIZE(node)) ;
+      printf(" %10zd", (ssize_t)NODE_SIZE(node)) ;
 #endif
 
       tp = localtime(&NODE_MTIME(node)) ;
