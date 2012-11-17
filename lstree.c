@@ -4,7 +4,8 @@
  */
 
 /* #ifndef lint */
-static char _rcs_id[] = "@(#) $Id: lstree.c,v 2.1 1999/09/10 01:24:09 mit Exp $" ;
+static const char __attribute__((used)) _rcs_id[] =
+	"@(#) $Id: lstree.c,v 2.1 1999/09/10 01:24:09 mit Exp $" ;
 /* #endif */
 
 #if !defined(_WIN32)

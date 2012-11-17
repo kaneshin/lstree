@@ -14,7 +14,8 @@
 */
 
 #ifndef LINT
-static char _rcs_id[] = "$Id: print.c,v 2.1 1999/09/10 01:24:10 mit Exp $" ;
+static const char __attribute__((used)) _rcs_id[] =
+	"$Id: print.c,v 2.1 1999/09/10 01:24:10 mit Exp $" ;
 #endif
 
 #if !defined(_WIN32)

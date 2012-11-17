@@ -7,7 +7,8 @@
 
 #ifdef _WIN32
 #ifndef lint
-static char _rcs_id[] = "$Id: dirent_win32.c,v 2.1 1999/09/10 01:24:07 mit Exp $" ;
+static const char __attribute__((used)) _rcs_id[] =
+	"$Id: dirent_win32.c,v 2.1 1999/09/10 01:24:07 mit Exp $" ;
 #endif
 
 #include <stdio.h>

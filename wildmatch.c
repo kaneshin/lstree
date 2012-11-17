@@ -14,7 +14,8 @@
 #define nul '\0'
 
 #ifndef LINT
-static char _rcs_id[] = "$Id: wildmatch.c,v 2.1 1999/09/10 01:24:11 mit Exp $" ;
+static const char __attribute__((used)) _rcs_id[] =
+	"$Id: wildmatch.c,v 2.1 1999/09/10 01:24:11 mit Exp $" ;
 #endif
 
 extern int wild_match_charclass(/* char *wildcard, char *target */) ;

@@ -5,7 +5,8 @@
 #ifdef _WIN32
 
 #ifndef lint
-static char _rcs_id[] = "@(#) $Id: sjis_pathcpy.c,v 2.1 1999/09/10 01:24:10 mit Exp $" ;
+static const char __attribute__((used)) _rcs_id[] =
+	"@(#) $Id: sjis_pathcpy.c,v 2.1 1999/09/10 01:24:10 mit Exp $" ;
 #endif
 
 #include <stdio.h>
