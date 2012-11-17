@@ -285,22 +285,28 @@ main(argc, argv)
     case 7 :
     case 6 :
       printf("\n") ;
-      opt_html && printf("<!--\n") ;
+      if (opt_html)
+        printf("<!--\n") ;
       xmalloc_information() ;
-      opt_html && printf("-->\n") ;
+      if (opt_html)
+        printf("-->\n") ;
     case 5 :
     case 4 :
     case 3 :
     case 2 :
       printf("\n") ;
-      opt_html && printf("<!--\n") ;
+      if (opt_html)
+        printf("<!--\n") ;
       fnmatch_information() ;
-      opt_html && printf("-->\n") ;
+      if (opt_html)
+        printf("-->\n") ;
     case 1 :
       printf("\n") ;
-      opt_html && printf("<PRE>\n") ;
+      if (opt_html)
+        printf("<PRE>\n") ;
       print_node_count() ;
-      opt_html && printf("</PRE>\n") ;
+      if (opt_html)
+        printf("</PRE>\n") ;
     default : /* default or level 0 is no information */
       break ;
     }
