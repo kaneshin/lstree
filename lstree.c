@@ -14,12 +14,14 @@ static char _rcs_id[] = "@(#) $Id: lstree.c,v 2.1 1999/09/10 01:24:09 mit Exp $"
 
 #include <limits.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <errno.h>
 #include <string.h>
 #include <strings.h>
 #include <dirent.h>
 #include <termios.h>
 #include <time.h>
+#include <unistd.h>
 
 #ifdef sun
 extern char *sys_errlist[] ;
@@ -248,7 +250,7 @@ main(argc, argv)
 		   argv[i], is_rootpath(argv[i]) ? "" : "/") ;
 	  else
 	    {
-	      char *wd = getcwd(NULL, 0) ;
+	      char *wd = (char *)getcwd(NULL, 0) ;
 
 	      if (wd != NULL)
 		{

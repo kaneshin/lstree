@@ -9,6 +9,8 @@ static char _rcs_id[] = "$Id: xmalloc.c,v 2.1 1999/09/10 01:24:11 mit Exp $" ;
 #endif
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "xmalloc.h"
 
 #define ROUND_MIN_SIZE   32

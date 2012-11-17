@@ -14,12 +14,14 @@ static char _rcs_id[] = "$Id: node.c,v 2.1 1999/09/10 01:24:09 mit Exp $" ;
 
 #include <limits.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <errno.h>
 #include <string.h>
 #include <strings.h>
 #include <dirent.h>
 #include <termios.h>
 #include <time.h>
+#include <unistd.h>
 
 #ifdef sun
 extern char *sys_errlist[] ;
@@ -47,6 +49,7 @@ extern char *sys_errlist[] ;
 #include "lstree.h"
 
 /* */
+
 extern char *make_pathname(/* nodeinfo_t *node */) ;
 extern int   do_list_tree(/* nodeinfo_t *parent */) ;
 extern int   get_depth(/* nodeinfo_t *node */) ;

@@ -136,6 +136,7 @@ extern int sort_by_size() ;
 extern int get_depth() ;
 extern void print_node_count() ;
 extern char *sjis_pathcpy() ;
+extern int is_rootpath() ;
 
 extern char *xstrdup() ;
 /*
